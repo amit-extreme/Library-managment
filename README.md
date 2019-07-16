@@ -7,3 +7,6 @@
 7. and then run `rails s`.
 8. i am using sqlite3 database.
 9. i am using Strip for payment purpose.
+10. run seed `rake db:seed'
+email id : amitt6580@gmail.com
+password : Welcome
