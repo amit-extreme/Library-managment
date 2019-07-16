@@ -1,5 +1,5 @@
 1. ruby version ruby '2.5.1'.
-2. i am using here Devise gem for login and sign up pupose.
+2. i am using here Devise gem for login and sign up purpose.
 3. after that i am create new book with author and and author image and check who is the owner of this book and who is the owner of library.
 4. firstly clone the project and run `bundle install`.
 5. secound run `rake db:create`.
