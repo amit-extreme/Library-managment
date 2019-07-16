@@ -1,12 +1,14 @@
-1. ruby version ruby '2.5.1'.
-2. i am using here Devise gem for login and sign up purpose.
-3. after that i am create new book with author and and author image and check who is the owner of this book and who is the owner of library.
-4. firstly clone the project and run `bundle install`.
-5. secound run `rake db:create`.
-6. third run `rake db:migrate`.
-7. and then run `rails s`.
-8. i am using sqlite3 database.
-9. i am using Strip for payment purpose.
-10. run seed `rake db:seed'
-email id : amitt6580@gmail.com
+ruby version ruby '2.5.`'.
+i am using here Devise gem for login and sign up purpose.
+after that i am create new book with author and and author image and check who is the owner of this book and who is the owner of library.
+i am using sqlite3 database.
+i am using Strip for payment purpose.
+
+firstly clone the project and run `bundle install`.
+secound run `rake db:create`.
+third run `rake db:migrate`.
+run seed `rake db:seed'.
+User Name : amitt6580@gmail.com
 password : Welcome
+and then run `rails s`.
+
