@@ -28,7 +28,7 @@
           <% end %>
 
         <% else %>
-          <%= link_to 'Add to library', new_user_registration_path, class: "button is-link is-fullwidth" %>
+          <%= link_to 'Add to library', add_book_path(book, type: "add"),method: :put, class: "button is-link is-fullwidth" %>
         <% end %>
       </div>
     </div>
