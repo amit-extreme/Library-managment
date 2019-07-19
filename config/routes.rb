@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   end
   resources :library, only:[:index]
   resources :pricing, only:[:index]
+  resources :users, only:[:index]
   devise_for :users, controllers: { registrations: "registrations" }
   root to: 'books#index'
   resources :subscriptions

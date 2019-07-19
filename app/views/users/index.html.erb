@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+ 
+</head>
+<body>
+
+<div class="container">
+  <table class="table table-hover">
+    <thead>
+       <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Created At</th>
+      <th>Simulate</th>
+      <th colspan="3"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <% if !user.admin %>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+        <td><%= user.created_at.to_date %></td>
+        <td><%= link_to 'Simulate', edit_user_registration_path %></td>
+       <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+
+
