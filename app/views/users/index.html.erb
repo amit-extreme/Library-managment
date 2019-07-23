@@ -23,20 +23,16 @@
     <tbody>
     <% @users.each do |user| %>
       <tr>
-        <% if !user.admin %>
-        <td><%= user.name %></td>
-        <td><%= user.email %></td>
-        <td><%= user.created_at.to_date %></td>
-        <td><%= link_to 'Simulate', edit_user_registration_path %></td>
-       <% end %>
+          <td><%= user.name %></td>
+          <td><%= user.email %></td>
+          <td><%= user.created_at.to_date %></td>
+          <td><%= link_to 'Simulate', edit_user_registration_path %></td>
       </tr>
     <% end %>
   </tbody>
   </table>
-  <%#= will_paginate @users %>
+  <%= will_paginate @users %>
 </div>
 
 </body>
 </html>
-
-

@@ -7,6 +7,11 @@ class User < ApplicationRecord
   has_many :libraries
   has_many :library_additions, through: :libraries, source: :book
 
+
+
+  # set per_page globally
+  WillPaginate.per_page = 2
+
   def subscribed?
     stripe_subscription_id?
   end

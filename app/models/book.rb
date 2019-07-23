@@ -4,5 +4,5 @@ class Book < ApplicationRecord
   has_many :libraries
   has_many :added_books, through: :libraries, source: :user
 
-  validates :title, presence: true
+  validates :title, :description, :author, presence: true
 end
